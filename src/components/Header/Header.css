@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(200, 0, 0);
+    align-items: center;
+}
+
+nav h3 {
+    margin: 0 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-buttons p {
+    margin: 20px 10px;
+}

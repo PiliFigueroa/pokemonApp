@@ -1,0 +1,24 @@
+.search-container {
+    margin: 50px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color:  #2a75bb;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid  #2a75bb;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.search-container button:hover {
+    background-color: #3c5aa6;
+    border: 2px solid #3c5aa6;
+    cursor: pointer;
+}
