@@ -47,11 +47,13 @@ const Home = () => {
         <Layout>
             <div className="search-container">
                 <h1>Search Pokemon</h1>
-                <input type="text" onChange={searchName} />
-                <button onClick={() => searchPokemon()}>Search</button>
+                <div className="search-inputs">
+                    <input type="text" onChange={searchName} />
+                    <button onClick={() => searchPokemon()}>Search</button>
+                </div>
+                {!loader && <Card pokemon={pokemon} />}
+                {error && <p>No se encontro el pokemon buscado</p>}
             </div>
-            {!loader && <Card pokemon={pokemon} />}
-            {error && <p>No se encontro el pokemon buscado</p>}
         </Layout>
     )
 }

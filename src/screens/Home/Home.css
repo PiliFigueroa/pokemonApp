@@ -1,5 +1,13 @@
 .search-container {
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-container h1 {
+    text-align: center;
 }
 
 .search-container input {
@@ -7,7 +15,7 @@
     margin: 20px 0;
 }
 
-.search-container button {
+.search-inputs button {
     padding: 10px 20px;
     background-color:  #2a75bb;
     color: #fff;
@@ -17,7 +25,7 @@
     margin: 0 10px;
 }
 
-.search-container button:hover {
+.search-inputs button:hover {
     background-color: #3c5aa6;
     border: 2px solid #3c5aa6;
     cursor: pointer;
