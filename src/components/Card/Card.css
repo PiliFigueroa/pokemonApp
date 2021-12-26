@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+.pokemon-container h3 {
+    text-transform: capitalize;
+}
+
 .pokemon-container ul li {
     list-style: none;
 }
