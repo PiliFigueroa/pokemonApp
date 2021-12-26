@@ -15,6 +15,12 @@
     margin: 20px 0;
 }
 
+.search-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .search-inputs button {
     padding: 10px 20px;
     background-color:  #2a75bb;
@@ -22,7 +28,6 @@
     font-weight: bold;
     border: 2px solid  #2a75bb;
     border-radius: 5px;
-    margin: 0 10px;
 }
 
 .search-inputs button:hover {
