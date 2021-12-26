@@ -36,11 +36,13 @@ const Home = () => {
                     types: data.types
                 })
                 setLoader(false)
+                setError(false)
             })
             .catch(error => {
                 console.log(error)
-                setError(true)}
-            )
+                setError(true)
+                setLoader(true)
+            })
     }
 
     return(
@@ -52,7 +54,7 @@ const Home = () => {
                     <button onClick={() => searchPokemon()}>Search</button>
                 </div>
                 {!loader && <Card pokemon={pokemon} />}
-                {error && <p>No se encontro el pokemon buscado</p>}
+                {error && <p>No se encontro el pokemon buscado.</p>}
             </div>
         </Layout>
     )
