@@ -1,10 +1,11 @@
 import React from 'react';
+import PokeLogo from '../../utils/pokeball.png'
 import './Header.css'
 
 const Header = () => {
     return(
         <nav>
-            <h3>Logo</h3>
+            <img src={PokeLogo} alt="pokeball" />
             <div className="nav-buttons">
                 <p>Home</p>
                 <p>Pokemon</p>

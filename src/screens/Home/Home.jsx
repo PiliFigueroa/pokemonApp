@@ -21,7 +21,7 @@ const Home = () => {
 
     const searchName = (e) => setPokemonName(e.target.value)
 
-    const request = () => {
+    const searchPokemon = () => {
         api.get(`/pokemon/${pokemonName}`)
             .then(response => {
                 const { data } = response
@@ -48,7 +48,7 @@ const Home = () => {
             <div className="search-container">
                 <h1>Search Pokemon</h1>
                 <input type="text" onChange={searchName} />
-                <button onClick={() => request()}>Search</button>
+                <button onClick={() => searchPokemon()}>Search</button>
             </div>
             {!loader && <Card pokemon={pokemon} />}
             {error && <p>No se encontro el pokemon buscado</p>}

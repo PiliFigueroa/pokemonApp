@@ -5,8 +5,14 @@ nav {
     align-items: center;
 }
 
-nav h3 {
-    margin: 0 10px;
+nav img {
+    width: 50px;
+    margin: 10px;
+}
+
+nav img:hover {
+    transition: 1s ease-in-out;
+    transform: rotate(360deg);
 }
 
 .nav-buttons {
