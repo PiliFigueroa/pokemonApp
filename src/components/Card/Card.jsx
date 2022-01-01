@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Card.css'
 
-const Card = ({pokemon}) => {
+const Card = ({ pokemon }) => {
 
     const {name, img, img_back, hp, attack, defense, types} = pokemon
     const [mouse, setMouse] = useState(false)
